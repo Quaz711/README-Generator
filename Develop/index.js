@@ -15,7 +15,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
         return true;
       }
       
-      else {
+      else { //Tells the user to enter something as nothing was detected
         console.log('Please enter your repository title.');
         return false;
       }
@@ -31,7 +31,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
         return true;
       }
       
-      else {
+      else { //Tells the user to enter something as nothing was detected
         console.log('Please enter a description of the repository.');
         return false;
       }
@@ -49,7 +49,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
     name: 'installation',
     message: 'Please list installation instructions.',
     when: ({ confirmInstallation }) => {
-      if (confirmInstallation) {
+      if (confirmInstallation) { //Checks to make sure confirmInstallation is true and lets user input information about it
         return true;
       }
       
@@ -68,8 +68,8 @@ const questions = () => { //An array of detailedd questions to ask the user to g
   {
     type: 'input',
     name: 'usage',
-    message: 'Please list instructions for using your application. It is recommended to add descriptive images later as well.',
-    when: ({ confirmUsage }) => {
+    message: 'Please list instructions for using your application.',
+    when: ({ confirmUsage }) => { //Checks to make sure confirmUsage is true and lets user input information about it
       if (confirmUsage) {
         return true;
       }
@@ -90,7 +90,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
     type: 'input',
     name: 'contributing',
     message: 'Please explain how other developers may contribute to your project.',
-    when: ({ confirmContribution }) => {
+    when: ({ confirmContribution }) => { //Checks to make sure confirmContribution is true and lets user input information about it
       if (confirmContribution) {
         return true;
       }
@@ -111,7 +111,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
     type: 'input',
     name: 'tests',
     message: 'Please explain how users may test your application.',
-    when: ({ testConfirm }) => {
+    when: ({ testConfirm }) => { //Checks to make sure testConfirm is true and lets user input information about it
       if (testConfirm) {
         return true;
       }
@@ -141,7 +141,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
         return true;
       }
       
-      else {
+      else { //Tells the user to enter something as nothing was detected
         console.log('Please enter your GitHub username.');
         return false;
       }
@@ -157,7 +157,7 @@ const questions = () => { //An array of detailedd questions to ask the user to g
         return true;
       }
       
-      else {
+      else { //Tells the user to enter something as nothing was detected
         console.log('Please enter your email.');
         return false;
       }
@@ -185,12 +185,12 @@ const questions = () => { //An array of detailedd questions to ask the user to g
 function writeToFile(fileName, data) {
   return new Promise((resolve, reject) => {
     fs.writeFile(fileName, data, err => {
-      if (err) {
+      if (err) { //If there is errors then it throws back the errors to let the user know so they can fix whatever they didn't enter correctly
         reject(err);
         return;
       }
 
-      resolve({ ok: true, message: 'README Created!' });
+      resolve({ ok: true, message: 'README Created!' }); //If there is no errors then it creates the README.md file
     });
   });
 }
@@ -198,11 +198,11 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 async function init() {
   try {
-    const answers = await questions();
-    writeToFile('README.md', generateMarkdown(answers));
+    const answers = await questions(); //Awaits for all the questions to be answered from the user
+    writeToFile('README.md', generateMarkdown(answers)); //Goes to the writeToFile function when all answers have been answered
   }
   
-  catch (err) {
+  catch (err) { //Catches any errors and console.logs them for the user so they understand what is happening
     console.log(err);
   }
 };
