@@ -1,10 +1,10 @@
-# P
+# README-Generator
 
-  ## License: None ![badge](https://img.shields.io/badge/license--orange)
-  ###  
+  ## License: MIT License ![badge](https://img.shields.io/badge/license-MITLicense-orange)
+  ###  https://choosealicense.com/licenses/mit/
 
   ## Description
-  P
+  A README generator that asks for user input and creates a professional README.md file
 
   ## Table of Contents 
   - [Installation](#installation)
@@ -15,21 +15,21 @@
   - [Questions?](#questions)
     
   ## Installation:
-  None
+  You need to install npm i inquirer@8.2.4
 
   ## Usage:
-  None
+  While in debugger you will need to run the comman node develop/index.js and then follow the prompts and answer the questions
 
   ## License:
-  None
+  MIT License
 
   ## Contributing:
-  None
+  You can visit my github and clone the repository code
 
   ## Tests:
   None
 
   ## Questions?:
-  - Github: [P](https://github.com/P)
-  - Email: P
-  - Additional: P
+  - Github: [Quaz711](https://github.com/Quaz711)
+  - Email: Quaz711@hotmail.com
+  - Additional: You can contact me through my email or send a request on github

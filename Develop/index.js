@@ -186,13 +186,11 @@ function writeToFile(fileName, data) {
   return new Promise((resolve, reject) => {
     fs.writeFile(fileName, data, err => {
       if (err) {
-        console.log("Entered IF Statement");
         reject(err);
         return;
       }
 
       resolve({ ok: true, message: 'README Created!' });
-      console.log("Resolved");
     });
   });
 }
