@@ -12,6 +12,8 @@
   - [Contribution](#contributing)
   - [Testing](#tests)
   - [License](#license)
+  - [Images](#images)
+  - [Walkthrough](#walkthrough)
   - [Questions?](#questions)
     
   ## Installation:
@@ -28,6 +30,13 @@
 
   ## Tests:
   None
+  
+  ## Images:
+  None
+
+  ## Walkthrough:
+  Video of the application running
+  [Screencastify](https://drive.google.com/file/d/1uAL9Czkndyw251Cx2OyZ4cs2F19W0F0v/view)
 
   ## Questions?:
   - Github: [Quaz711](https://github.com/Quaz711)
