@@ -20,7 +20,7 @@
   You need to install npm i inquirer@8.2.4
 
   ## Usage:
-  While in debugger you will need to run the comman node develop/index.js and then follow the prompts and answer the questions
+  While in debugger you will need to run the command node develop/index.js and then follow the prompts and answer the questions
 
   ## License:
   MIT License
